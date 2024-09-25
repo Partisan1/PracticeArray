@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diákok Nyilvántartása</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Diákok Nyilvántartása</h1>
+    </header>
+
+    <main>
+        <section class="student-actions">
+            <h2>Diák Műveletek</h2>
+            <form id="add-student-form">
+                <h3>Diák hozzáadása</h3>
+                <label for="name">Név:</label>
+                <input type="text" id="name" required>
+                <label for="age">Életkor:</label>
+                <input type="number" id="age" required>
+                <label for="grades">Jegyek (vesszővel elválasztva):</label>
+                <input type="text" id="grades" required>
+                <button type="submit">Hozzáadás</button>
+            </form>
+
+            <form id="filter-age-form">
+                <h3>Életkor szerinti szűrés</h3>
+                <label for="filter-age">Életkor:</label>
+                <input type="number" id="filter-age" required>
+                <button type="submit">Szűrés</button>
+            </form>
+
+            <form id="filter-average-form">
+                <h3>Adott átlagtól jobb diákok</h3>
+                <label for="average">Átlag:</label>
+                <select id="average">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button type="submit">Szűrés</button>
+            </form>
+
+            <form id="delete-student-form">
+                <h3>Diák törlése</h3>
+                <label for="delete-name">Név:</label>
+                <input type="text" id="delete-name" required>
+                <button type="submit">Törlés</button>
+            </form>
+
+            <form id="update-grades-form">
+                <h3>Jegyek módosítása</h3>
+                <label for="update-name">Név:</label>
+                <input type="text" id="update-name" required>
+                <label for="update-grades">Új jegyek (vesszővel elválasztva):</label>
+                <input type="text" id="update-grades" required>
+                <button type="submit">Módosítás</button>
+            </form>
+        </section>
+
+        <section class="result-list">
+            <h2>Műveletek eredménye:</h2>
+            <ul id="result-list">
+                <!-- Diákok listája itt jelenik meg -->
+            </ul>
+        </section>
+
+        <!-- <section class="student-averages">
+            <h2>Diákok Átlaga</h2>
+            <ul id="student-average-list">
+                 Diákok átlaga itt jelenik meg 
+            </ul>
+        </section> -->
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

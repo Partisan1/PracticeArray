@@ -1,0 +1,88 @@
+:root{
+    --brown: #2B2118;
+    --bg: #AF9164;
+    --sectBg: #B3B6B7;
+    --red: #6F1A07;
+    --light: #F7F3E3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--brown);
+}
+
+header {
+    background-color: var(--brown);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+section {
+    width: 45%;
+    padding: 1rem;
+    background-color: var(--sectBg);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--brown);
+}
+
+h3 {
+    margin: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: var(--brown);
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--red);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
